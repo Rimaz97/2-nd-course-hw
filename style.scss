@@ -72,6 +72,19 @@ body {
             letter-spacing: 0px;
             text-align: left;
             padding-bottom: 48px;
+
+            &-bold {
+                color: rgb(32, 32, 39);
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0px;
+                padding-bottom: 48px;
+            }
+        }
+
+        &-mini {
+            display: none;
         }
     }
 
@@ -133,7 +146,7 @@ body {
         }
 
         &-box {
-
+            height: 100%;
             border-radius: 30px;
             background-color: white;
         }
@@ -145,26 +158,32 @@ body {
         }
 
         &-№1 {
+            width: 100%;
             background-color: #AD61FF;
         }
 
         &-№2 {
+            width: 100%;
             background-color: #FDAD00;
         }
 
         &-№3 {
+            width: 100%;
             background-color: #565EEF;
         }
 
         &-№4 {
+            width: 100%;
             background-color: #271A58;
         }
 
         &-№5 {
+            width: 100%;
             background-color: #99D100;
         }
 
         &-№6 {
+            width: 100%;
             background-color: #271A58;
         }
         
@@ -319,3 +338,6 @@ body {
         padding: 60px ;
     }
 }
+
+@import 'tablet';
+@import 'mobile';
