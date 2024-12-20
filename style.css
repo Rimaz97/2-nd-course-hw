@@ -68,6 +68,17 @@ body {
   text-align: left;
   padding-bottom: 48px;
 }
+.top__box-text-bold {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-bottom: 48px;
+}
+.top__box-mini {
+  display: none;
+}
 .top__animation {
   margin-top: 156px;
   height: 90px;
@@ -117,6 +128,7 @@ body {
   transform: scale(1.1);
 }
 .games__product-box {
+  height: 100%;
   border-radius: 30px;
   background-color: white;
 }
@@ -126,21 +138,27 @@ body {
   border-radius: 30px;
 }
 .games__product-№1 {
+  width: 100%;
   background-color: #AD61FF;
 }
 .games__product-№2 {
+  width: 100%;
   background-color: #FDAD00;
 }
 .games__product-№3 {
+  width: 100%;
   background-color: #565EEF;
 }
 .games__product-№4 {
+  width: 100%;
   background-color: #271A58;
 }
 .games__product-№5 {
+  width: 100%;
   background-color: #99D100;
 }
 .games__product-№6 {
+  width: 100%;
   background-color: #271A58;
 }
 .games__product-text {
@@ -269,4 +287,157 @@ body {
   letter-spacing: 0px;
   text-align: center;
   padding: 60px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    width: 285px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .button:hover {
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-image: url(img/Mobile/Star2.svg), url(img/Mobile/Star3.svg), url(img/Mobile/Star5.svg), url(img/Mobile/Star4.svg), url(img/Mobile/Star1.svg);
+    background-position: 37px 97px, 91px 64px, calc(100% - 86px) calc(100% - 125px), calc(100% - 34px) calc(100% - 79px), 100% 0;
+    background-repeat: no-repeat;
+  }
+  .top__box {
+    padding-top: 147px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__box-header {
+    color: rgb(32, 32, 39);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__box-text {
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__box-text-bold {
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top__box-btn {
+    display: none;
+  }
+  .top__box-mini {
+    display: block;
+  }
+  .top__animation {
+    margin-top: 131px;
+    height: 51px;
+  }
+  .games {
+    display: none;
+  }
+  .mini {
+    background: rgb(32, 32, 39);
+    padding-top: 48px;
+  }
+  .mini__header {
+    font-size: 40px;
+    line-height: 49px;
+    padding-bottom: 48px;
+  }
+  .mini__large {
+    gap: 24px;
+  }
+  .mini__product {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+  }
+  .mini__product-№1 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__product-№2 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__product-№3 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__product-№4 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__product-№5 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__product-№6 {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mini__left {
+    border-radius: 30px 30px;
+  }
+  .mini__right {
+    border-radius: 30px 30px;
+  }
+  .mini__box {
+    width: auto;
+    padding: 29px 29px 32px;
+  }
+  .mini__box-header {
+    padding-bottom: 16px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .mini__box-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 32px;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    max-height: 100px;
+  }
+  .footer__header {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 40px 0 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

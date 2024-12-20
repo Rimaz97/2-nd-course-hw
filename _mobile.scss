@@ -1,0 +1,179 @@
+@media (max-width: 767px) {
+    .button {
+        width: 285px;
+        height: 55px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .button:hover {
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+    }
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 700px;
+        background-image: url(img/Mobile/Star2.svg),
+        url(img/Mobile/Star3.svg), 
+        url(img/Mobile/Star5.svg),
+        url(img/Mobile/Star4.svg), 
+        url(img/Mobile/Star1.svg);
+        background-position: 37px 97px, 91px 64px, calc(100% - 86px) calc(100% - 125px), calc(100% - 34px) calc(100% - 79px), 100% 0;
+        background-repeat: no-repeat;
+
+        &__box {
+            padding-top: 147px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &-header {
+                color: rgb(32, 32, 39);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 49px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+
+            &-text {
+                color: rgb(32, 32, 39);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0px;
+                text-align: center;
+
+                &-bold {
+                    color: rgb(32, 32, 39);
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+
+            &-btn {
+                display: none;
+            }
+
+            &-mini {
+                display: block;
+            }
+        }
+
+        &__animation {
+            margin-top: 131px;
+            height: 51px;
+        }
+    }
+
+    .games {
+        display: none;
+    }
+
+    .mini {
+        background: rgb(32, 32, 39);
+        padding-top: 48px;
+
+        &__header {
+            font-size: 40px;
+            line-height: 49px;
+            padding-bottom: 48px;
+        }
+
+        &__large {
+            gap: 24px;
+        }
+
+        &__product {
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            background: rgb(255, 255, 255);
+            border-radius: 30px;
+
+            &-№1 {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            &-№2 {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            &-№3 {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            &-№4 {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            &-№5 {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            &-№6 {
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+
+        &__left {
+            border-radius: 30px 30px;
+        }
+
+        &__right {
+            border-radius: 30px 30px;
+        }
+
+        &__box {
+            width: auto;
+            padding: 29px 29px 32px;
+
+            &-header {
+                padding-bottom: 16px;
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &-text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                padding-bottom: 32px;
+            }
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        max-height: 100px;
+
+        &__header {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 40px 0 40px;
+        }
+    }
+}
