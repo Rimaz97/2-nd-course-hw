@@ -52,22 +52,22 @@ const questionGenerator = () => {
     if (userInput) {
       //If the user guessed correct answer
       if (userInput == answerValue) {
-        stopGame(`Yippie!! <span>Correct</span> Answer`);
+        stopGame(`Ура!! <span>Правильный</span> ответ`);
       }
       //If user inputs operator other than +,-,*
       else if (operatorQuestion && !operators.includes(userInput)) {
         errorMessage.classList.remove("hide");
-        errorMessage.innerHTML = "Please enter a valid operator";
+        errorMessage.innerHTML = "Пожалуйста, введите допустимый оператор";
       }
       //If user guessed wrong answer
       else {
-        stopGame(`Opps!! <span>Wrong</span> Answer`);
+        stopGame(`Упс!! <span>Неверный</span> ответ`);
       }
     }
     //If user input is empty
     else {
       errorMessage.classList.remove("hide");
-      errorMessage.innerHTML = "Input Cannot Be Empty";
+      errorMessage.innerHTML = "Что-то пошло не так";
     }
   });
 };
@@ -87,7 +87,7 @@ startBtn.addEventListener("click", () => {
 //Stop Game
 const stopGame = (resultText) => {
   result.innerHTML = resultText;
-  startBtn.innerText = "Restart";
+  startBtn.innerText = "Заново";
   controls.classList.remove("hide");
   startBtn.classList.remove("hide");
 };
