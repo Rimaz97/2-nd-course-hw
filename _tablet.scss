@@ -1,6 +1,11 @@
-@media (max-width: 1024px) {
-    .center {
-        padding-left: calc(50% - 393px);
-        padding-right: calc(50% - 393px);
+@media (max-width: 769px) {
+    .mini {
+        &__product {
+        height: auto;
+        width: 768px;
+        }
+        &__box {
+            padding: 24px 24px;
+        }
     }
 }

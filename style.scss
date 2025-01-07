@@ -9,7 +9,7 @@ a {
 
 body {
     font-family: 'Montserrat', sans-serif;
-
+    overflow-x: hidden;
 }
 
 .center {
@@ -38,6 +38,21 @@ body {
     background: transparent;
     color: rgb(32, 32, 39);
 }
+
+.anima {
+    animation: ticker 7s linear infinite;
+}
+
+@keyframes ticker {
+    0% {        
+      transform: translate3d(-25%, 0, 0);
+    }    
+
+   100% {
+      transform: translate3d(-50%, 0, 0);
+    }   
+}
+
 
 .top {
     height: 800px;
@@ -90,9 +105,28 @@ body {
 
     &__animation {
         margin-top: 156px;
-        height: 90px;
-        width: auto;
         background-color: rgb(188, 236, 48);
+        width: 3220px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 51px;
+        padding: 27px 49px;
+
+        &-titel {
+            color: rgb(32, 32, 39);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        &-image {
+            width: 36px;
+            height: 36px;
+        }
     }
 }
 
