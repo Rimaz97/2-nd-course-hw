@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Пример простого квиза</title>
+    <title>Викторина</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <div class="quiz">
         <!-- Форма, которая содержит весь квиз -->
         <form action="#!" class="quiz__form">
+          <h1>Викторина</h1>
           <!-- Поле для каждого шага квиза -->
           <fieldset class="quiz__fieldset">
             <legend class="quiz__legend">
@@ -29,9 +29,7 @@
               </div>
             </div>
             <!-- Контейнер для отображения ответов -->
-            <div class="quiz__answer" id="answers-container">
-              <!-- Ответы будут добавлены динамически через JavaScript -->
-            </div>
+            <div class="quiz__answer" id="answers-container"></div>
           </fieldset>
           <!-- Кнопка для перехода к следующему шагу -->
           <button type="button" class="quiz__button" onclick="nextStep()">

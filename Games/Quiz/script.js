@@ -3,17 +3,17 @@ const formSteps = [
   {
     question: "Какой цвет небо?",
     answers: ["1. Красный", "2. Синий", "3. Зеленый"],
-    correctAnswer: 2
+    correctAnswer: 1 // Индекс с учетом 0
   },
   {
     question: "Сколько дней в неделе?",
     answers: ["1. Шесть", "2. Семь", "3. Восемь"],
-    correctAnswer: 2
+    correctAnswer: 1
   },
   {
     question: "Сколько у человека пальцев на одной руке?",
     answers: ["1. Четыре", "2. Пять", "3. Шесть"],
-    correctAnswer: 2
+    correctAnswer: 1
   },
 ];
 
@@ -85,23 +85,43 @@ function nextStep() {
     currentStep++;
     renderStep();
   } else {
-    const messageText = selectedAnswers
-      .map(
-        (step, index) =>
-          `Вопрос ${index + 1}: ${step.question}\nОтвет: ${step.answer}`
-      )
-      .join("\n\n");
-    sendResults(messageText);
-    alert("Квиз завершён");
+    displayResults();
   }
 }
 
-// Функция для отправки результатов
-function sendResults(data) {
-  // Выводим данные в консоль для отладки
-  console.log("Отправляем данные...");
-  console.log(data);
-  // Здесь можно добавить код для отправки данных на сервер
+// Функция для отображения результатов
+function displayResults() {
+  const quizContainer = document.querySelector('.quiz');
+  quizContainer.innerHTML = ''; // Очистка контейнера
+
+  // Заголовок результатов
+  const resultTitle = document.createElement('h2');
+  resultTitle.textContent = 'Викторина окончена';
+  quizContainer.appendChild(resultTitle);
+
+  let correctCount = 0;
+  let incorrectCount = 0;
+
+  selectedAnswers.forEach((step, index) => {
+    const correctAnswerIndex = formSteps[index].correctAnswer;
+    if (step.answer === formSteps[index].answers[correctAnswerIndex]) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+  });
+
+  // Текст результатов
+  const resultText = document.createElement('p');
+  resultText.textContent = `Правильные ответы: ${correctCount}, Неправильные ответы: ${incorrectCount}`;
+  quizContainer.appendChild(resultText);
 }
 
+// Функция для отправки результатов (можно удалить или оставить для отладки)
+function sendResults(data) {
+  console.log("Отправляем данные...");
+  console.log(data);
+}
+
+// Событие загрузки DOM
 document.addEventListener("DOMContentLoaded", renderStep);

@@ -7,6 +7,20 @@ body {
     background-color: rgb(225, 255, 143);
     font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   
 /* Основной контейнер квиза */
 .quiz {
@@ -15,10 +29,6 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 1 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    user-select: none;
-    margin: 200px;
 }
   
 /* Стили для формы квиза */
@@ -30,6 +40,8 @@ body {
     padding: 50px;
     border-radius: 5px;
 }
+
+
   
 /* Поле для шага квиза */
 .quiz__fieldset {
@@ -155,4 +167,18 @@ body {
     font-size: 17px;
     text-align: center;
     font-family: inherit;
+}
+
+.quiz h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quiz p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.quiz .quiz__button {
+    margin-top: 20px;
 }
