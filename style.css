@@ -167,15 +167,15 @@ body {
   border: 0.5px solid rgb(32, 32, 39);
   border-radius: 30px;
 }
-.games__product-№1 {
+.games__product-Number {
   width: 100%;
   background-color: #AD61FF;
 }
-.games__product-№2 {
+.games__product-Math {
   width: 100%;
   background-color: #FDAD00;
 }
-.games__product-№3 {
+.games__product-Turning {
   width: 100%;
   background-color: #565EEF;
 }
@@ -183,7 +183,7 @@ body {
   width: 100%;
   background-color: #271A58;
 }
-.games__product-№5 {
+.games__product-Quiz {
   width: 100%;
   background-color: #99D100;
 }
@@ -252,22 +252,22 @@ body {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.mini__product-№1 {
+.mini__product-Guess {
   background-color: #AD61FF;
 }
-.mini__product-№2 {
+.mini__product-Arithmetic {
   background-color: #FDAD00;
 }
-.mini__product-№3 {
+.mini__product-Text {
   background-color: #565EEF;
 }
-.mini__product-№4 {
+.mini__product-Rochambeau {
   background-color: #271A58;
 }
-.mini__product-№5 {
+.mini__product-Quiz {
   background-color: #99D100;
 }
-.mini__product-№6 {
+.mini__product-Generator {
   background-color: #271A58;
 }
 .mini__left {
