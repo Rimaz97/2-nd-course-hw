@@ -29,6 +29,7 @@
         url(img/Mobile/Star1.svg);
         background-position: 37px 97px, 91px 64px, calc(100% - 86px) calc(100% - 125px), calc(100% - 34px) calc(100% - 79px), 100% 0;
         background-repeat: no-repeat;
+        overflow-x: hidden;
 
         &__box {
             padding-top: 147px;
